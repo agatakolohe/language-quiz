@@ -15,20 +15,17 @@
 .card {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   display: block;
 }
 body {
   background: lightgrey;
 }
-
 .img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-}
-ul {
-  list-style-position: inside;
 }
 .form-group {
   text-align: center;
