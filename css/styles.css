@@ -2,6 +2,14 @@
   text-align: center;
   background-color: #007272;
 }
+.jumboimg {
+  margin-top: 10px;
+  height: 50%;
+  width: 50%;
+  margin-bottom: 20px;
+  border: solid #00bebe;
+  border-width: 5px;
+}
 a {
   color: #00bebe;
 }
