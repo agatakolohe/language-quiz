@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programming Language Suggestor</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Are You Interested In Learning A Programming Language?</h1>
+    <h3>Take this short quiz to find out which language would be best for you to learn!</h3>
+
+    <form id="quiz">
+      <h5>1. Are you interested in Front End or Back End Development?</h5>
+      <input type="radio" id="frontend" name="development" value="frontend">
+      <label for="frontend">Front End</label><br>
+      <input type="radio" id="backend" name="development" value="backend">
+      <label for="backend">Back End</label><br>
+      <br>
+
+      <h5>2. Which color(s) do you like the most?</h5>
+      <input type="radio" id="red" name="color" value="red">
+      <label for="red">Red</label><br>
+      <input type="radio" id="purple" name="color" value="purple">
+      <label for="purple">Purple</label><br>
+      <input type="radio" id="yellow" name="color" value="yellow">
+      <label for="yellow">Yellow</label><br>
+      <input type="radio" id="yellowblue" name="color" value="yellowblue">
+      <label for="yellowblue">Yellow and Blue</label><br>
+      <br>
+
+      <h5>3. What would you like to build?</h5>
+      <input type="radio" id="web" name="build" value="web">
+      <label for="web">Web Applications</label><br>
+      <input type="radio" id="games" name="build" value="games">
+      <label for="games">Games</label><br>
+      <input type="radio" id="fun" name="build" value="fun">
+      <label for="fun">I want to learn the fundamentals</label><br>
+      <br>
+
+      <h5>4. Who would you like to work for?</h5>
+      <input type="radio" id="github" name="work" value="github">
+      <label for="github">Git Hub</label><br>
+      <input type="radio" id="microsoft" name="work" value="microsoft">
+      <label for="microsoft">Microsoft</label><br>
+      <input type="radio" id="netflix" name="work" value="netflix">
+      <label for="netflix">Netflix</label><br>
+      <input type="radio" id="google" name="work" value="google">
+      <label for="google">Google</label><br>
+      <br>
+
+      <h5>5. Which line of code appeals to you the most?</h5>
+      <input type="radio" id="rubee" name="helloworld" value="rubee">
+      <label for="rubee">"puts "Hello World!""</label><br>
+      <input type="radio" id="seesharp" name="helloworld" value="seesharp">
+      <label for="seesharp">"console.WriteLine("Hello World!")"</label><br>
+      <input type="radio" id="jscript" name="helloworld" value="jscript">
+      <label for="jscript">"alert('Hello World!');"</label><br>
+      <input type="radio" id="snake" name="helloworld" value="snake">
+      <label for="snake">"print("Hello World!")"</label><br>
+      <br>
+
+      <button type="submit" class="btn btn-outline-light">Submit!</button><br>
+    </form>
+
+    <div id="ruby">
+      <h4>You got Ruby!</h4>
+      <p>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. To learn more <a href="#">Click Here</a></p>
+      <img src="https://banner2.cleanpng.com/20180428/dsq/kisspng-ruby-on-rails-programming-language-computer-progra-5ae4ad08b27f03.5253789115249359447311.jpg" alt="Ruby Logo" class="img">
+    </div>
+    <div id="csharp">
+      <h4>You got C#!</h4>
+      <p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run in the .NET ecosystem. To learn more <a href="#">Click Here</a></p>
+      <img src="https://www.alltechflix.com/wp-content/uploads/2019/01/c-sharp-language.jpg" alt="C# Logo" class="img">
+    </div>
+    <div id="javascript">
+      <h4>You got JavaScript!</h4>
+      <p>JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for web pages, but it is used in many non-browser enviornments as well. To learn more <a href="#">Click Here</a></p>
+      <img src="https://ih1.redbubble.net/image.243371836.4766/st,small,507x507-pad,600x600,f8f8f8.u3.jpg" alt="Java Script Logo" class="img">
+    </div>
+    <div id="python">
+      <h4>You got Python!</h4>
+      <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. To learn more <a href="#">Click Here</a></p>
+      <img src="https://juniortech.org/wp-content/uploads/2017/04/python-software-logo-300x158.jpg" alt="Python Logo" class="img">
+    </div>
+    <div id="newbie">
+      <h4>Looks like you're interested in learning a lot about programming languages!</h4>
+      <p>If you are new, I suggest you start with the basics, HTML and CSS! Once you have built a solid foundation with those two languages you can move on to JavaScript. To learn more <a href="#">Click Here</a></p>
+      <img src="https://img.favpng.com/0/10/13/cascading-style-sheets-javascript-html-css3-jquery-png-favpng-EGGfknrdZiCNYjAFKp62Dnpy7.jpg" alt="HTML, CSS and JS Logo" class="img">
+
+    </div>
+  </div>
+</body>
+</html>

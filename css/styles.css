@@ -1,0 +1,16 @@
+#ruby, #csharp, #javascript, #python, #newbie {
+  display: none;
+  margin-top: 30px;
+  text-align: center;
+}
+
+body {
+  background: lightgrey;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
