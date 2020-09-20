@@ -3,7 +3,17 @@
   margin-top: 30px;
   text-align: center;
 }
-
+#showing {
+  display: none;
+}
+.clickable {
+  color: darkturquoise;
+}
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 body {
   background: lightgrey;
 }
@@ -13,4 +23,25 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+ul {
+  list-style-position: inside;
+}
+.form-group {
+  text-align: center;
+}
+label[for="red"] {
+  color: red;
+}
+label[for="purple"] {
+  color: purple;
+}
+label[for="yellow"] {
+  color: yellow;
+}
+label[for="yellowblue"] .blue {
+  color: blue;
+}
+label[for="yellowblue"] .mellow {
+  color: yellow;
 }

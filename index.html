@@ -9,10 +9,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>Are You Interested In Learning A Programming Language?</h1>
-    <h3>Take this short quiz to find out which language would be best for you to learn!</h3>
+    <div class="jumbotron">
+      <h1>Are You Interested In Learning A Programming Language?</h1>
+      <h3>Take this short quiz to find out which language would be best for you to learn!</h3>
+    </div>
 
     <form id="quiz">
+      <div class="form-group">
+        <input id="name" class="form-control" type="text">
+        <label for="name">Please Enter Your Name</label>
+      </div>
       <h5>1. Are you interested in Front End or Back End Development?</h5>
       <input type="radio" id="frontend" name="development" value="frontend">
       <label for="frontend">Front End</label><br>
@@ -28,7 +34,7 @@
       <input type="radio" id="yellow" name="color" value="yellow">
       <label for="yellow">Yellow</label><br>
       <input type="radio" id="yellowblue" name="color" value="yellowblue">
-      <label for="yellowblue">Yellow and Blue</label><br>
+      <label for="yellowblue"><span class="blue">Blue</span> and <span class="mellow">Yellow</span></label><br>
       <br>
 
       <h5>3. What would you like to build?</h5>
@@ -42,7 +48,7 @@
 
       <h5>4. Who would you like to work for?</h5>
       <input type="radio" id="github" name="work" value="github">
-      <label for="github">Git Hub</label><br>
+      <label for="github">GitHub</label><br>
       <input type="radio" id="microsoft" name="work" value="microsoft">
       <label for="microsoft">Microsoft</label><br>
       <input type="radio" id="netflix" name="work" value="netflix">
@@ -66,28 +72,38 @@
     </form>
 
     <div id="ruby">
-      <h4>You got Ruby!</h4>
+      <h4><span class="name"></span>, you got Ruby!</h4>
       <p>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. To learn more <a href="#">Click Here</a></p>
-      <img src="https://banner2.cleanpng.com/20180428/dsq/kisspng-ruby-on-rails-programming-language-computer-progra-5ae4ad08b27f03.5253789115249359447311.jpg" alt="Ruby Logo" class="img">
+      <div class="card" style="width: 18rem;">
+        <img src="https://banner2.cleanpng.com/20180428/dsq/kisspng-ruby-on-rails-programming-language-computer-progra-5ae4ad08b27f03.5253789115249359447311.jpg" alt="Ruby Logo" class="card-img-top">
+        <h5 class="card-title" id="hidden">To learn more about Ruby <span class="clickable">click here!</span></h5>
+        <p class="card-text" id="showing">text<span class="clickable">Click here to hide the information</span></p>
+      </div>
     </div>
     <div id="csharp">
-      <h4>You got C#!</h4>
+      <h4><span class="name"></span>, you got C#!</h4>
       <p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run in the .NET ecosystem. To learn more <a href="#">Click Here</a></p>
       <img src="https://www.alltechflix.com/wp-content/uploads/2019/01/c-sharp-language.jpg" alt="C# Logo" class="img">
     </div>
     <div id="javascript">
-      <h4>You got JavaScript!</h4>
+      <h4><span class="name"></span>, you got JavaScript!</h4>
       <p>JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for web pages, but it is used in many non-browser enviornments as well. To learn more <a href="#">Click Here</a></p>
       <img src="https://ih1.redbubble.net/image.243371836.4766/st,small,507x507-pad,600x600,f8f8f8.u3.jpg" alt="Java Script Logo" class="img">
     </div>
     <div id="python">
-      <h4>You got Python!</h4>
+      <h4><span class="name"></span>, you got Python!</h4>
       <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. To learn more <a href="#">Click Here</a></p>
       <img src="https://juniortech.org/wp-content/uploads/2017/04/python-software-logo-300x158.jpg" alt="Python Logo" class="img">
     </div>
     <div id="newbie">
-      <h4>Looks like you're interested in learning a lot about programming languages!</h4>
-      <p>If you are new, I suggest you start with the basics, HTML and CSS! Once you have built a solid foundation with those two languages you can move on to JavaScript. To learn more <a href="#">Click Here</a></p>
+      <h4><span class="name"></span>, looks like there are many options for you!</h4>
+      <p>If you are new to programming languages, I suggest you start with the basics, HTML and CSS! Once you have built a solid foundation with those two languages you can move on to JavaScript. To learn more <a href="#">Click Here</a>. If you are not new, check out some free courses online to get a taste of different languages before commiting your time and energy into mastering one!</p>
+      <ul>
+        <h5>Links to free online coding courses</h5>
+        <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+        <li><a href="https://www.freecodecamp.org/news/free-online-programming-cs-courses/">freeCodeCamp</a></li>
+        <li><a href="https://skillcrush.com/blog/64-online-resources-to-learn-to-code-for-free/">SKILLCRUSH</a></li>
+      </ul>
       <img src="https://img.favpng.com/0/10/13/cascading-style-sheets-javascript-html-css3-jquery-png-favpng-EGGfknrdZiCNYjAFKp62Dnpy7.jpg" alt="HTML, CSS and JS Logo" class="img">
 
     </div>
