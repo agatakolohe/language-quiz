@@ -22,18 +22,34 @@ $(document).ready(function() {
       $("#ruby, #javascript, #python, #newbie").hide();
       $(".name").text(name);
       $("#csharp").show();
+      $(".c-click").click(function() {
+        $("#c-showing").toggle();
+        $("#c-hidden").toggle();
+      });
     } else if (development === "frontend" && color === "yellow" && build === "fun" && work === "netflix" && helloworld === "jscript") {
       $("#ruby, #csharp, #python, #newbie").hide();
       $(".name").text(name);
       $("#javascript").show();
+      $(".j-click").click(function() {
+        $("#j-showing").toggle();
+        $("#j-hidden").toggle();
+      });
     } else if (development === "backend" && color === "yellowblue" && build === "web" && work === "google" && helloworld === "snake") {
       $("#ruby, #csharp, #javascript, #newbie").hide();
       $(".name").text(name);
       $("#python").show();
+      $(".p-click").click(function() {
+        $("#p-showing").toggle();
+        $("#p-hidden").toggle();
+      });
     } else {
       $("#ruby, #csharp, #javascript, #python").hide();
       $(".name").text(name);
       $("#newbie").show();
+      $(".h-click").click(function() {
+        $("#h-showing").toggle();
+        $("#h-hidden").toggle();
+      });
     }
   });
 });

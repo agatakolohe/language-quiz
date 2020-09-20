@@ -1,12 +1,15 @@
+.jumbotron {
+  text-align: center;
+}
 #ruby, #csharp, #javascript, #python, #newbie {
   display: none;
   margin-top: 30px;
   text-align: center;
 }
-#showing {
+#showing, #c-showing, #j-showing, #p-showing, #h-showing {
   display: none;
 }
-.clickable {
+.clickable, .c-click, .j-click, .p-click, .h-click {
   color: darkturquoise;
 }
 .card {
