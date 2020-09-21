@@ -23,6 +23,8 @@ a {
 }
 .clickable, .c-click, .j-click, .p-click, .h-click {
   color: darkturquoise;
+  cursor: pointer;
+  
 }
 .card {
   margin-left: auto;
