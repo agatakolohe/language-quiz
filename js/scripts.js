@@ -1,14 +1,13 @@
 $(document).ready(function() {
   $("form#quiz").submit(function(event) {
     event.preventDefault();
-
+    
     const name = $("input#name").val();
     const development = $("input:radio[name=development]:checked").val();
     const color = $("input:radio[name=color]:checked").val();
     const build = $("input:radio[name=build]:checked").val();
     const work = $("input:radio[name=work]:checked").val();
     const helloworld = $("input:radio[name=helloworld]:checked").val();
-
 
     if (development === "backend" && color === "red" && build === "web" && work === "github" && helloworld === "rubee") {
       $("#csharp, #javascript, #python, #newbie").hide();
