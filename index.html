@@ -17,9 +17,9 @@
     <form id="quiz">
       <div class="form-group">
         <input id="name" class="form-control" type="text">
-        <label for="name">Please Enter Your Name</label>
+        <label for="name"><strong>What's your name?</strong></label>
       </div>
-      <h5>1. Are you interested in Front End or Back End Development?</h5>
+      <h5>1. Are you interested in Front-End or Back-End Development?</h5>
       <input type="radio" id="frontend" name="development" value="frontend">
       <label for="frontend">Front End</label><br>
       <input type="radio" id="backend" name="development" value="backend">
@@ -70,8 +70,10 @@
       <button type="submit" class="btn btn-outline-light">Submit!</button><br>
     </form>
     <div id="ruby">
-      <h4><span class="name"></span>, you got Ruby!</h4>
-      <p>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Ruby is mostly used for building web applications. It is a general-purpose language, so it has many other appplications like data analysis, prototyping, and proof of concepts. Big companies using Ruby include: GitHub, Airbnb and Groupon. To learn more <a href="https://www.ruby-lang.org/en/">Click Here</a></p>
+      <div class="jumbotron">
+        <h4><span class="name"></span>, you got Ruby!</h4>
+        <p>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Ruby is mostly used for building web applications. It is a general-purpose language, so it has many other appplications like data analysis, prototyping, and proof of concepts. Big companies using Ruby include: GitHub, Airbnb and Groupon. To learn more <a href="https://www.ruby-lang.org/en/">Click Here</a></p>
+      </div>
       <div class="card" style="width: 18rem;">
         <img src="https://banner2.cleanpng.com/20180428/dsq/kisspng-ruby-on-rails-programming-language-computer-progra-5ae4ad08b27f03.5253789115249359447311.jpg" alt="Ruby Logo" class="card-img-top">
         <h5 class="card-title" id="hidden">For Some Fun Facts About Ruby<br><span class="clickable">Click Here!</span></h5>
@@ -80,8 +82,10 @@
       <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
     </div>
     <div id="csharp">
-      <h4><span class="name"></span>, you got C#!</h4>
-      <p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run in the .NET ecosystem. It is good for developing games. Big companies using C# include: Microsoft and Apple. It is widely used to create games using the Unity game engine, which is the most popular game engine today. To learn more <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Click Here</a></p>
+      <div class="jumbotron">
+        <h4><span class="name"></span>, you got C#!</h4>
+        <p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run in the .NET ecosystem. It is good for developing games. Big companies using C# include: Microsoft and Apple. It is widely used to create games using the Unity game engine, which is the most popular game engine today. To learn more <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Click Here</a></p>
+      </div>
       <div class="card" style="width: 18rem;">
         <img src="https://www.alltechflix.com/wp-content/uploads/2019/01/c-sharp-language.jpg" alt="C# Logo" class="card-img-top">
         <h5 class="card-title" id="c-hidden">For Some Fun Facts About C# <br><span class="c-click">Click Here!</span></h5>
@@ -90,8 +94,10 @@
       <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
     </div>
     <div id="javascript">
-      <h4><span class="name"></span>, you got JavaScript!</h4>
-      <p>JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for web pages, but it is used in many non-browser enviornments as well. Big companies using JS include: Netflix, PayPal and Uber. To learn more <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript">Click Here</a></p>
+      <div class="jumbotron">
+        <h4><span class="name"></span>, you got JavaScript!</h4>
+        <p>JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for web pages, but it is used in many non-browser enviornments as well. Big companies using JS include: Netflix, PayPal and Uber. To learn more <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript">Click Here</a></p>
+      </div>
       <div class="card" style="width: 18rem;">
         <img src="https://ih1.redbubble.net/image.243371836.4766/st,small,507x507-pad,600x600,f8f8f8.u3.jpg" alt="Java Script Logo" class="card-img-top">
         <h5 class="card-title" id="j-hidden">For Some Fun Facts About JavaScript <br><span class="j-click">Click Here!</span></h5>
@@ -100,18 +106,22 @@
       <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
     </div>
     <div id="python">
-      <h4><span class="name"></span>, you got Python!</h4>
-      <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Big companies using Python include: NASA, Google, and Facebook. To learn more <a href="https://www.python.org/">Click Here</a></p>
+      <div class="jumbotron">
+        <h4><span class="name"></span>, you got Python!</h4>
+        <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Big companies using Python include: NASA, Google, and Facebook. To learn more <a href="https://www.python.org/">Click Here</a></p>
+      </div>
       <div class="card" style="width: 18rem;">
         <img src="https://juniortech.org/wp-content/uploads/2017/04/python-software-logo-300x158.jpg" alt="Python Logo" class="card-img-top">
         <h5 class="card-title" id="p-hidden">For Some Fun Facts About Python <br><span class="p-click">Click Here!</span></h5>
-        <p class="card-text" id="p-showing"> Python is one of the most popular programming languages nowadays on account of its code readability and simplicity. It was created by Guido Van Rossum. He named it Python after his the comedy troupe <em>Monty Python</em>. Python can be used for either <strong>front-end or back-end</strong> development. It's approachable syntax and widespread server-side use makes it a core programming language for <strong>back-end</strong> development.<br><span class="p-click">Click Here To Hide The Information</span></p>
+        <p class="card-text" id="p-showing"> Python is one of the most popular programming languages currently on account of its code readability and simplicity. It was created by Guido Van Rossum. He named it Python after the comedy troupe <em>Monty Python</em>. Python can be used for either <strong>front-end or back-end</strong> development. It's approachable syntax and widespread server-side use makes it a core programming language for <strong>back-end</strong> development.<br><span class="p-click">Click Here To Hide The Information</span></p>
       </div>
       <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
     </div>
     <div id="newbie">
-      <h4><span class="name"></span>, looks like there are many options for you!</h4>
-      <p>If you are new to programming languages, I suggest you start with the basics, HTML and CSS! Once you have built a solid foundation with those two languages you can move on to JavaScript or your language of choice. To learn more <a href="https://www.w3.org/standards/webdesign/htmlcss#:~:text=HTML%20(the%20Hypertext%20Markup%20Language,for%20a%20variety%20of%20devices.">Click Here</a>. If you are not new, check out some free courses online to get a taste of different languages before commiting your time and energy into mastering one!</p>
+      <div class="jumbotron">
+        <h4><span class="name"></span>, looks like there are many options for you!</h4>
+        <p>If you are new to programming languages, I suggest you start with the basics, HTML and CSS! Once you have built a solid foundation with those two languages you can move on to JavaScript or your language of choice. To learn more <a href="https://www.w3.org/standards/webdesign/htmlcss#:~:text=HTML%20(the%20Hypertext%20Markup%20Language,for%20a%20variety%20of%20devices.">Click Here</a>. If you are not new, check out some free courses online to get a taste of different languages before commiting your time and energy into mastering one!</p>
+      </div>
       <ul class="list-unstyled">
         <h5>Websites Offering Free Coding Courses</h5>
         <li><a href="https://www.codecademy.com/">Codecademy</a></li>
@@ -121,7 +131,7 @@
       <div class="card" style="width: 18rem;">
         <img src="https://img.favpng.com/0/10/13/cascading-style-sheets-javascript-html-css3-jquery-png-favpng-EGGfknrdZiCNYjAFKp62Dnpy7.jpg" alt="HTML, CSS and JS Logo" class="card-img-top">
         <h5 class="card-title" id="h-hidden">For Some Fun Facts About HTML and CSS <br><span class="h-click">Click Here!</span></h5>
-        <p class="card-text" id="h-showing"> Hypertext Markup Language (HTML) is the standard markup language for documents desgined to be displayed in a web browser. It can be assisted by technologies such as Cascading Styles Sheets (CSS) and scripting languages such as JavaScript. CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. Both HTML and CSS are <strong>front-end languages</strong>.<br><span class="h-click">Click Here To Hide The Information</span></p>
+        <p class="card-text" id="h-showing"> Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Styles Sheets (CSS) and scripting languages such as JavaScript. CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. Both HTML and CSS are <strong>front-end languages</strong>.<br><span class="h-click">Click Here To Hide The Information</span></p>
       </div>
       <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
     </div>
