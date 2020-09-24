@@ -24,7 +24,6 @@ a {
 .clickable, .c-click, .j-click, .p-click, .h-click {
   color: darkturquoise;
   cursor: pointer;
-  
 }
 .card {
   margin-left: auto;
@@ -53,7 +52,8 @@ body {
   height: 60%;
 }
 .form-group {
-  text-align: center;
+  font-size: 20px;
+  text-shadow: 3px 3px black;
 }
 label[for="red"] {
   color: red;

@@ -9,7 +9,6 @@ $(document).ready(function() {
     const work = $("input:radio[name=work]:checked").val();
     const helloworld = $("input:radio[name=helloworld]:checked").val();
 
-
     if (development === "backend" && color === "red" && build === "web" && work === "github" && helloworld === "rubee") {
       $("#csharp, #javascript, #python, #newbie").hide();
       $(".name").text(name);
