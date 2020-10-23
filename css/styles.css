@@ -13,17 +13,78 @@
 a {
   color: #00bebe;
 }
-#ruby, #csharp, #javascript, #python, #newbie {
+.btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.lang-quiz h5 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-shadow: 5px 5px #007272;
+}
+.ulborder {
+  border: solid white;
+  border-style: inset;
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  box-sizing: border-box;
+}
+#ruby,
+#csharp,
+#javascript,
+#python,
+#newbie {
   display: none;
   margin-top: 30px;
   text-align: center;
 }
-#showing, #c-showing, #j-showing, #p-showing, #h-showing {
+#showing,
+#c-showing,
+#j-showing,
+#p-showing,
+#h-showing,
+#html-showing,
+#css-showing {
   display: none;
+  padding: 20px;
+  text-align: left;
 }
-.clickable, .c-click, .j-click, .p-click, .h-click {
+.clickable,
+.c-click,
+.j-click,
+.p-click,
+.h-click,
+.html-click,
+.css-click,
+.r-clickable,
+.r-c-click,
+.r-j-click,
+.r-p-click,
+.r-h-click,
+.r-html-click,
+.r-css-click {
   color: darkturquoise;
   cursor: pointer;
+}
+.clickable:hover,
+.c-click:hover,
+.j-click:hover,
+.p-click:hover,
+.h-click:hover,
+.html-click:hover,
+.css-click:hover,
+.r-clickable:hover,
+.r-c-click:hover,
+.r-j-click:hover,
+.r-p-click:hover,
+.r-h-click:hover,
+.r-html-click:hover,
+.r-css-click:hover {
+  color: white;
+  background-color: darkturquoise;
 }
 .card {
   margin-left: auto;
@@ -34,6 +95,12 @@ a {
   border-color: #00bebe;
   border-width: 5px;
 }
+.resultcards {
+  padding: 30px;
+  font-size: 17px;
+  text-align: center;
+}
+
 body {
   background: darkcyan;
   color: white;
@@ -44,16 +111,40 @@ body {
   margin-right: auto;
   width: 50%;
 }
-#jsimg {
+.csharpimg {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+}
+.jsimg {
+  display: block;
+  margin: auto;
+  width: 5%;
+  height: 5%;
+}
+.cssimg {
+  display: block;
+  margin: auto;
   width: 60%;
   height: 60%;
 }
 .form-group {
   font-size: 20px;
-  text-shadow: 3px 3px black;
+  text-shadow: 5px 5px #007272;
+}
+.form-control {
+  border: solid #00bebe;
+  border-style: inset;
+  border-width: 5px;
+  font-size: 20px;
+}
+.form-control:hover {
+  color: white;
+  background-color: #00bebe;
+}
+label[for="name"] {
+  margin-top: 15px;
 }
 label[for="red"] {
   color: red;
@@ -64,9 +155,6 @@ label[for="purple"] {
 label[for="yellow"] {
   color: yellow;
 }
-label[for="yellowblue"] .blue {
+label[for="blue"] {
   color: blue;
-}
-label[for="yellowblue"] .mellow {
-  color: yellow;
 }
