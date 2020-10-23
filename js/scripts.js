@@ -1,9 +1,10 @@
 $(document).ready(function () {
   $("form#quiz").submit(function (event) {
     event.preventDefault();
-
     const name = $("input#name").val();
-    const development = parseInt($("input:radio[name=development]:checked").val());
+    const development = parseInt(
+      $("input:radio[name=development]:checked").val()
+    ); //Prettier auto formats this const like this
     const color = parseInt($("input:radio[name=color]:checked").val());
     const build = parseInt($("input:radio[name=build]:checked").val());
     const work = parseInt($("input:radio[name=work]:checked").val());
@@ -13,7 +14,17 @@ $(document).ready(function () {
     const activity = parseInt($("input:radio[name=activity]:checked").val());
     const location = parseInt($("input:radio[name=location]:checked").val());
     const why = parseInt($("input:radio[name=why]:checked").val());
-    const result =  development + color + build + work + music + food + film + activity + location + why;
+    const result =
+      development +
+      color +
+      build +
+      work +
+      music +
+      food +
+      film +
+      activity +
+      location +
+      why; //Prettier auto formats this const like this
 
     if (result >= 300) {
       $("#csharp").show();
@@ -52,7 +63,7 @@ $(document).ready(function () {
       });
     }
   });
-  //Functions for results.html 
+  //Functions for results.html
   $(".r-c-click").click(function () {
     $("#c-showing").fadeToggle();
   });

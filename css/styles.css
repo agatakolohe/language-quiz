@@ -22,6 +22,16 @@ a {
   margin-bottom: 15px;
   text-shadow: 5px 5px #007272;
 }
+.ulborder {
+  border: solid white;
+  border-style: inset;
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 30px;
+  display: block;
+  box-sizing: border-box;
+}
 #ruby,
 #csharp,
 #javascript,
@@ -72,7 +82,7 @@ a {
 .r-p-click:hover,
 .r-h-click:hover,
 .r-html-click:hover,
-.r-css-click:hover  {
+.r-css-click:hover {
   color: white;
   background-color: darkturquoise;
 }
@@ -103,22 +113,19 @@ body {
 }
 .csharpimg {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 10px;
   height: 10px;
 }
 .jsimg {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 5%;
   height: 5%;
 }
 .cssimg {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   width: 60%;
   height: 60%;
 }
@@ -128,6 +135,7 @@ body {
 }
 .form-control {
   border: solid #00bebe;
+  border-style: inset;
   border-width: 5px;
   font-size: 20px;
 }
