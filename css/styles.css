@@ -48,7 +48,14 @@ a {
 .p-click,
 .h-click,
 .html-click,
-.css-click {
+.css-click,
+.r-clickable,
+.r-c-click,
+.r-j-click,
+.r-p-click,
+.r-h-click,
+.r-html-click,
+.r-css-click {
   color: darkturquoise;
   cursor: pointer;
 }
@@ -58,7 +65,14 @@ a {
 .p-click:hover,
 .h-click:hover,
 .html-click:hover,
-.css-click:hover {
+.css-click:hover,
+.r-clickable:hover,
+.r-c-click:hover,
+.r-j-click:hover,
+.r-p-click:hover,
+.r-h-click:hover,
+.r-html-click:hover,
+.r-css-click:hover  {
   color: white;
   background-color: darkturquoise;
 }
@@ -86,6 +100,13 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+.csharpimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10px;
+  height: 10px;
 }
 .jsimg {
   display: block;

@@ -53,22 +53,22 @@ $(document).ready(function () {
     }
   });
   //Functions for results.html 
-  $(".c-click").click(function () {
+  $(".r-c-click").click(function () {
     $("#c-showing").fadeToggle();
   });
-  $(".clickable").click(function () {
+  $(".r-clickable").click(function () {
     $("#showing").fadeToggle();
   });
-  $(".p-click").click(function () {
+  $(".r-p-click").click(function () {
     $("#p-showing").fadeToggle();
   });
-  $(".j-click").click(function () {
+  $(".r-j-click").click(function () {
     $("#j-showing").fadeToggle();
   });
-  $(".html-click").click(function () {
+  $(".r-html-click").click(function () {
     $("#html-showing").fadeToggle();
   });
-  $(".css-click").click(function () {
+  $(".r-css-click").click(function () {
     $("#css-showing").fadeToggle();
   });
 });
