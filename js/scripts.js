@@ -18,35 +18,35 @@ $(document).ready(function () {
     if (result >= 300) {
       $("#csharp").show();
       $("#ruby, #javascript, #python, #newbie").hide();
-      $(".name").text(name);
+      $(".name").text(name.charAt(0).toUpperCase() + name.substr(1));
       $(".c-click").click(function () {
         $("#c-showing").slideToggle();
       });
     } else if (result >= 200) {
       $("#ruby").show();
       $("#csharp, #javascript, #python, #newbie").hide();
-      $(".name").text(name);
+      $(".name").text(name.charAt(0).toUpperCase() + name.substr(1));
       $(".clickable").click(function () {
         $("#showing").slideToggle();
       });
     } else if (result >= 100) {
       $("#python").show();
       $("#ruby, #csharp, #javascript, #newbie").hide();
-      $(".name").text(name);
+      $(".name").text(name.charAt(0).toUpperCase() + name.substr(1));
       $(".p-click").click(function () {
         $("#p-showing").slideToggle();
       });
-    } else if (result >= 35) {
+    } else if (result >= 37) {
       $("#javascript").show();
       $("#ruby, #csharp, #python, #newbie").hide();
-      $(".name").text(name);
+      $(".name").text(name.charAt(0).toUpperCase() + name.substr(1));
       $(".j-click").click(function () {
         $("#j-showing").slideToggle();
       });
     } else {
       $("#newbie").show();
       $("#ruby, #csharp, #javascript, #python").hide();
-      $(".name").text(name);
+      $(".name").text(name.charAt(0).toUpperCase() + name.substr(1));
       $(".h-click").click(function () {
         $("#h-showing").slideToggle();
       });
