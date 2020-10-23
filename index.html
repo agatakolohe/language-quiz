@@ -1,140 +1,361 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Programming Language Suggestor</title>
-</head>
-<body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Interested In Learning A Programming Language?</h1>
-      <img src="https://pm-powerconsulting.com/wp-content/uploads/2018/04/agileteam.jpg" alt="Person On Computer" class="jumboimg">
-      <h4>Take the quiz to find out which language would be best for you to learn!</h4>
-    </div>
-    <form id="quiz">
-      <div class="form-group">
-        <input id="name" class="form-control" type="text">
-        <label for="name"><strong>What's your name?</strong></label>
-      </div>
-      <h5>1. Are you interested in Front-End or Back-End Development?</h5>
-      <input type="radio" id="frontend" name="development" value="frontend">
-      <label for="frontend">Front End</label><br>
-      <input type="radio" id="backend" name="development" value="backend">
-      <label for="backend">Back End</label><br>
-      <input type="radio" id="notsure" name="development" value="notsure">
-      <label for="notsure">Not Sure</label><br>
-      <br>
-      <h5>2. Which color(s) do you like the most?</h5>
-      <input type="radio" id="red" name="color" value="red">
-      <label for="red">Red</label><br>
-      <input type="radio" id="purple" name="color" value="purple">
-      <label for="purple">Purple</label><br>
-      <input type="radio" id="yellow" name="color" value="yellow">
-      <label for="yellow">Yellow</label><br>
-      <input type="radio" id="yellowblue" name="color" value="yellowblue">
-      <label for="yellowblue"><span class="blue">Blue</span> and <span class="mellow">Yellow</span></label><br>
-      <br>
-      <h5>3. What would you like to build?</h5>
-      <input type="radio" id="web" name="build" value="web">
-      <label for="web">Web Applications</label><br>
-      <input type="radio" id="games" name="build" value="games">
-      <label for="games">Games</label><br>
-      <input type="radio" id="fun" name="build" value="fun">
-      <label for="fun">I want to learn the fundamentals</label><br>
-      <input type="radio" id="notsure" name="build" value="notsure">
-      <label for="notsure">Not Sure</label><br>
-      <br>
-      <h5>4. Who would you like to work for?</h5>
-      <input type="radio" id="github" name="work" value="github">
-      <label for="github">GitHub</label><br>
-      <input type="radio" id="microsoft" name="work" value="microsoft">
-      <label for="microsoft">Microsoft</label><br>
-      <input type="radio" id="netflix" name="work" value="netflix">
-      <label for="netflix">Netflix</label><br>
-      <input type="radio" id="google" name="work" value="google">
-      <label for="google">Google</label><br>
-      <br>
-      <h5>5. Which line of code appeals to you the most?</h5>
-      <input type="radio" id="rubee" name="helloworld" value="rubee">
-      <label for="rubee">"puts "Hello World!""</label><br>
-      <input type="radio" id="seesharp" name="helloworld" value="seesharp">
-      <label for="seesharp">"console.WriteLine("Hello World!")"</label><br>
-      <input type="radio" id="jscript" name="helloworld" value="jscript">
-      <label for="jscript">"alert('Hello World!');"</label><br>
-      <input type="radio" id="snake" name="helloworld" value="snake">
-      <label for="snake">"print("Hello World!")"</label><br>
-      <br>
-      <button type="submit" class="btn btn-outline-light">Submit!</button><br>
-    </form>
-    <div id="ruby">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Programming Language Suggestor</title>
+  </head>
+  <body>
+    <div class="container">
       <div class="jumbotron">
-        <h4><span class="name"></span>, you got Ruby!</h4>
-        <p>Ruby is a dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. Ruby is mostly used for building web applications. It is a general-purpose language, so it has many other appplications like data analysis, prototyping, and proof of concepts. Big companies using Ruby include: GitHub, Airbnb and Groupon. To learn more <a href="https://www.ruby-lang.org/en/">Click Here</a></p>
+        <h1>Interested In Learning A Programming Language?</h1>
+        <img
+          src="https://pm-powerconsulting.com/wp-content/uploads/2018/04/agileteam.jpg"
+          alt="Person On Computer"
+          class="jumboimg"
+        />
+        <h4>
+          Take the quiz to find out which language would be best for you to
+          learn!
+        </h4>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://banner2.cleanpng.com/20180428/dsq/kisspng-ruby-on-rails-programming-language-computer-progra-5ae4ad08b27f03.5253789115249359447311.jpg" alt="Ruby Logo" class="card-img-top">
-        <h5 class="card-title" id="hidden">For Some Fun Facts About Ruby<br><span class="clickable">Click Here!</span></h5>
-        <p class="card-text" id="showing">It was designed and developed in the mid-1990s by Yukihiro Mastumoto in Japan. Ruby is often confused with Ruby on Rails, which is a server-side framework written in Ruby under the MIT License for implementing web applications. It is a <strong>back-end language</strong>.<br> <span class="clickable">Click Here To Hide The Information</span></p>
+      <form id="quiz">
+        <div class="form-group">
+          <input id="name" class="form-control" type="text" />
+          <label for="name"><strong>What's your name?</strong></label>
+        </div>
+        <p>1. Are you interested in Front-End or Back-End Development?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="development" value="10" />
+            a. Front-End
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="development" value="20" />
+            b. Back-End
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="development" value="0" />
+            c. Not Sure
+          </label>
+        </div>
+        <p>2. Which color(s) do you like the most?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="1" />
+            a. Red
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="2" />
+            b. Purple
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="3" />
+            c. Yellow
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="4" />
+            c. Blue and Yellow
+          </label>
+        </div>
+        <p>3. What would you like to build?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="1" />
+            a. Red
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="2" />
+            b. Purple
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="3" />
+            c. Yellow
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="4" />
+            c. Blue and Yellow
+          </label>
+        </div>
+
+        <h5>1. Are you interested in Front-End or Back-End Development?</h5>
+        <input type="radio" id="frontend" name="development" value="10" />
+        <label for="frontend">Front End</label><br />
+        <input type="radio" id="backend" name="development" value="20" />
+        <label for="backend">Back End</label><br />
+        <input type="radio" id="notsure" name="development" value="0" />
+        <label for="notsure">Not Sure</label><br />
+        <br />
+        <h5>2. Which color(s) do you like the most?</h5>
+        <input type="radio" id="red" name="color" value="1" />
+        <label for="red">Red</label><br />
+        <input type="radio" id="purple" name="color" value="2" />
+        <label for="purple">Purple</label><br />
+        <input type="radio" id="yellow" name="color" value="3" />
+        <label for="yellow">Yellow</label><br />
+        <input type="radio" id="yellowblue" name="color" value="4" />
+        <label for="yellowblue"
+          ><span class="blue">Blue</span> and
+          <span class="mellow">Yellow</span></label
+        ><br />
+        <br />
+        <h5>3. What would you like to build?</h5>
+        <input type="radio" id="web" name="build" value="10" />
+        <label for="web">Web Applications</label><br />
+        <input type="radio" id="games" name="build" value="30" />
+        <label for="games">Games</label><br />
+        <input type="radio" id="fun" name="build" value="2" />
+        <label for="fun">I want to learn the fundamentals</label><br />
+        <input type="radio" id="notsure" name="build" value="notsure" />
+        <label for="0">Not Sure</label><br />
+        <br />
+        <h5>4. Who would you like to work for?</h5>
+        <input type="radio" id="github" name="work" value="6" />
+        <label for="github">GitHub</label><br />
+        <input type="radio" id="microsoft" name="work" value="30" />
+        <label for="microsoft">Microsoft</label><br />
+        <input type="radio" id="netflix" name="work" value="20" />
+        <label for="netflix">Netflix</label><br />
+        <input type="radio" id="google" name="work" value="10" />
+        <label for="google">Google</label><br />
+        <br />
+        <h5>5. What type of music do you like?</h5>
+        <input type="radio" id="country" name="music" value="7" />
+        <label for="rubee">Country</label><br />
+        <input type="radio" id="rock" name="music" value="20" />
+        <label for="seesharp">Rock</label><br />
+        <input type="radio" id="jazz" name="music" value="2" />
+        <label for="jscript">Jazz</label><br />
+        <input type="radio" id="edm" name="music" value="10" />
+        <label for="snake">EDM</label><br />
+        <br />
+        <button type="submit" class="btn btn-outline-light">Submit!</button
+        ><br />
+      </form>
+      <div id="ruby">
+        <div class="jumbotron">
+          <h4><span class="name"></span>, you got Ruby!</h4>
+          <p>
+            Ruby is a dynamic, open source programming language with a focus on
+            simplicity and productivity. It has an elegant syntax that is
+            natural to read and easy to write. Ruby is mostly used for building
+            web applications. It is a general-purpose language, so it has many
+            other appplications like data analysis, prototyping, and proof of
+            concepts. Big companies using Ruby include: GitHub, Airbnb and
+            Groupon. To learn more
+            <a href="https://www.ruby-lang.org/en/">Click Here</a>
+          </p>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://banner2.cleanpng.com/20180428/dsq/kisspng-ruby-on-rails-programming-language-computer-progra-5ae4ad08b27f03.5253789115249359447311.jpg"
+            alt="Ruby Logo"
+            class="card-img-top"
+          />
+          <h5 class="card-title clickable">
+            Click here for Some Fun Facts About Ruby
+          </h5>
+          <p class="card-text" id="showing">
+            It was designed and developed in the mid-1990s by Yukihiro Mastumoto
+            in Japan. Ruby is often confused with Ruby on Rails, which is a
+            server-side framework written in Ruby under the MIT License for
+            implementing web applications. It is a
+            <strong>back-end language</strong>.
+          </p>
+        </div>
+        <button type="button" class="btn btn-outline-light">
+          <a href="results.html">Click here to see all results</a>
+        </button>
       </div>
-      <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
+      <div id="csharp">
+        <div class="jumbotron">
+          <h4><span class="name"></span>, you got C#!</h4>
+          <p>
+            C# is an elegant and type-safe object-oriented language that enables
+            developers to build a variety of secure and robust applications that
+            run in the .NET ecosystem. It is good for developing games. Big
+            companies using C# include: Microsoft and Apple. It is widely used
+            to create games using the Unity game engine, which is the most
+            popular game engine today. To learn more
+            <a href="https://docs.microsoft.com/en-us/dotnet/csharp/"
+              >Click Here</a
+            >
+          </p>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://www.alltechflix.com/wp-content/uploads/2019/01/c-sharp-language.jpg"
+            alt="C# Logo"
+            class="card-img-top"
+          />
+          <h5 class="card-title c-click">
+            Click here for Some Fun Facts About C#
+          </h5>
+          <p class="card-text" id="c-showing">
+            C#, pronounced as "C sharp", was developed by Microsoft led by
+            Anders Hejlsberg and his team within the .NET initiative and was
+            approved by the European Computer Manufacturers Association (ECMA)
+            and International Standards Organization (ISO). The name "C sharp"
+            was inspired by the musical notation where sharp indicates that the
+            written note should be made a semitone higher in pitch. This is
+            similar to the language name of C++, where "++" indicates that a
+            variable should be incremented by 1 after being evaluated. The sharp
+            symbol also resembles a ligature of four "+" symbols (in a
+            two-by-two grid), further implying that the language is an increment
+            of C++. It is a <strong>back-end language</strong>.
+          </p>
+        </div>
+        <button type="button" class="btn btn-outline-light">
+          <a href="results.html">Click here to see all results</a>
+        </button>
+      </div>
+      <div id="javascript">
+        <div class="jumbotron">
+          <h4><span class="name"></span>, you got JavaScript!</h4>
+          <p>
+            JavaScript is a lightweight, interpreted, object-oriented language
+            with first-class functions, and is best known as the scripting
+            language for web pages, but it is used in many non-browser
+            enviornments as well. Big companies using JS include: Netflix,
+            PayPal and Uber. To learn more
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript"
+              >Click Here</a
+            >
+          </p>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://ih1.redbubble.net/image.243371836.4766/st,small,507x507-pad,600x600,f8f8f8.u3.jpg"
+            alt="Java Script Logo"
+            class="card-img-top"
+          />
+          <h5 class="card-title j-click">
+            Click here for Some Fun Facts About JavaScript
+          </h5>
+          <p class="card-text" id="j-showing">
+            JavaScript (JS) was developed in 1995 by Netscape programmer Brandan
+            Eich in just <strong>10 days</strong>. It was originally named
+            <em>Mocha</em>. Along with HTML and CSS it is one of the three main
+            parts of the World Wide Web. It enables interactive web pages and
+            thus is an essential part of web applications.
+            <strong>It is distinctly different from Java</strong>. It is a
+            <strong>front-end language</strong>.
+          </p>
+        </div>
+        <button type="button" class="btn btn-outline-light">
+          <a href="results.html">Click here to see all results</a>
+        </button>
+      </div>
+      <div id="python">
+        <div class="jumbotron">
+          <h4><span class="name"></span>, you got Python!</h4>
+          <p>
+            Python is an interpreted, object-oriented, high-level programming
+            language with dynamic semantics. Big companies using Python include:
+            NASA, Google, and Facebook. To learn more
+            <a href="https://www.python.org/">Click Here</a>
+          </p>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://juniortech.org/wp-content/uploads/2017/04/python-software-logo-300x158.jpg"
+            alt="Python Logo"
+            class="card-img-top"
+          />
+          <h5 class="card-title p-click">
+            Click here for Some Fun Facts About Python
+          </h5>
+          <p class="card-text" id="p-showing">
+            Python is one of the most popular programming languages currently on
+            account of its code readability and simplicity. It was created by
+            Guido Van Rossum. He named it Python after the comedy troupe
+            <em>Monty Python</em>. Python can be used for either
+            <strong>front-end or back-end</strong> development. It's
+            approachable syntax and widespread server-side use makes it a core
+            programming language for <strong>back-end</strong> development.
+          </p>
+        </div>
+        <button type="button" class="btn btn-outline-light">
+          <a href="results.html">Click here to see all results</a>
+        </button>
+      </div>
+      <div id="newbie">
+        <div class="jumbotron">
+          <h4>
+            <span class="name"></span>, looks like there are many options for
+            you!
+          </h4>
+          <p>
+            If you are new to programming languages, I suggest you start with
+            the basics, HTML and CSS! Once you have built a solid foundation
+            with those two languages you can move on to JavaScript or your
+            language of choice. To learn more
+            <a
+              href="https://www.w3.org/standards/webdesign/htmlcss#:~:text=HTML%20(the%20Hypertext%20Markup%20Language,for%20a%20variety%20of%20devices."
+              >Click Here</a
+            >. If you are not new, check out some free courses online to get a
+            taste of different languages before commiting your time and energy
+            into mastering one!
+          </p>
+        </div>
+        <ul class="list-unstyled">
+          <h5>Websites Offering Free Coding Courses</h5>
+          <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org/news/free-online-programming-cs-courses/"
+              >freeCodeCamp</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://skillcrush.com/blog/64-online-resources-to-learn-to-code-for-free/"
+              >SKILLCRUSH</a
+            >
+          </li>
+        </ul>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://img.favpng.com/0/10/13/cascading-style-sheets-javascript-html-css3-jquery-png-favpng-EGGfknrdZiCNYjAFKp62Dnpy7.jpg"
+            alt="HTML, CSS and JS Logo"
+            class="card-img-top"
+          />
+          <h5 class="card-title h-click">
+            Click here for Some Fun Facts About HTML and CSS
+          </h5>
+          <p class="card-text" id="h-showing">
+            Hypertext Markup Language (HTML) is the standard markup language for
+            documents designed to be displayed in a web browser. It can be
+            assisted by technologies such as Cascading Styles Sheets (CSS) and
+            scripting languages such as JavaScript. CSS is a style sheet
+            language used for describing the presentation of a document written
+            in a markup language such as HTML. Both HTML and CSS are
+            <strong>front-end languages</strong>.
+          </p>
+        </div>
+        <button type="button" class="btn btn-outline-light">
+          <a href="results.html">Click here to see all results</a>
+        </button>
+      </div>
     </div>
-    <div id="csharp">
-      <div class="jumbotron">
-        <h4><span class="name"></span>, you got C#!</h4>
-        <p>C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run in the .NET ecosystem. It is good for developing games. Big companies using C# include: Microsoft and Apple. It is widely used to create games using the Unity game engine, which is the most popular game engine today. To learn more <a href="https://docs.microsoft.com/en-us/dotnet/csharp/">Click Here</a></p>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://www.alltechflix.com/wp-content/uploads/2019/01/c-sharp-language.jpg" alt="C# Logo" class="card-img-top">
-        <h5 class="card-title" id="c-hidden">For Some Fun Facts About C# <br><span class="c-click">Click Here!</span></h5>
-        <p class="card-text" id="c-showing">C#, pronounced as "C sharp", was developed by Microsoft led by Anders Hejlsberg and his team within the .NET initiative and was approved by the European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). The name "C sharp" was inspired by the musical notation where sharp indicates that the written note should be made a semitone higher in pitch. This is similar to the language name of C++, where "++" indicates that a variable should be incremented by 1 after being evaluated. The sharp symbol also resembles a ligature of four "+" symbols (in a two-by-two grid), further implying that the language is an increment of C++. It is a <strong>back-end language</strong>. <br><span class="c-click">Click Here To Hide The Information</span></p>
-      </div>
-      <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
-    </div>
-    <div id="javascript">
-      <div class="jumbotron">
-        <h4><span class="name"></span>, you got JavaScript!</h4>
-        <p>JavaScript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for web pages, but it is used in many non-browser enviornments as well. Big companies using JS include: Netflix, PayPal and Uber. To learn more <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/About_JavaScript">Click Here</a></p>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://ih1.redbubble.net/image.243371836.4766/st,small,507x507-pad,600x600,f8f8f8.u3.jpg" alt="Java Script Logo" class="card-img-top">
-        <h5 class="card-title" id="j-hidden">For Some Fun Facts About JavaScript <br><span class="j-click">Click Here!</span></h5>
-        <p class="card-text" id="j-showing">JavaScript (JS) was developed in 1995 by Netscape programmer Brandan Eich in just <strong>10 days</strong>. It was originally named <em>Mocha</em>. Along with HTML and CSS it is one of the three main parts of the World Wide Web. It enables interactive web pages and thus is an essential part of web applications. <strong>It is distinctly different from Java</strong>. It is a <strong>front-end language</strong>. <br><span class="j-click">Click Here To Hide The Information</span></p>
-      </div>
-      <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
-    </div>
-    <div id="python">
-      <div class="jumbotron">
-        <h4><span class="name"></span>, you got Python!</h4>
-        <p>Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Big companies using Python include: NASA, Google, and Facebook. To learn more <a href="https://www.python.org/">Click Here</a></p>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="https://juniortech.org/wp-content/uploads/2017/04/python-software-logo-300x158.jpg" alt="Python Logo" class="card-img-top">
-        <h5 class="card-title" id="p-hidden">For Some Fun Facts About Python <br><span class="p-click">Click Here!</span></h5>
-        <p class="card-text" id="p-showing"> Python is one of the most popular programming languages currently on account of its code readability and simplicity. It was created by Guido Van Rossum. He named it Python after the comedy troupe <em>Monty Python</em>. Python can be used for either <strong>front-end or back-end</strong> development. It's approachable syntax and widespread server-side use makes it a core programming language for <strong>back-end</strong> development.<br><span class="p-click">Click Here To Hide The Information</span></p>
-      </div>
-      <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
-    </div>
-    <div id="newbie">
-      <div class="jumbotron">
-        <h4><span class="name"></span>, looks like there are many options for you!</h4>
-        <p>If you are new to programming languages, I suggest you start with the basics, HTML and CSS! Once you have built a solid foundation with those two languages you can move on to JavaScript or your language of choice. To learn more <a href="https://www.w3.org/standards/webdesign/htmlcss#:~:text=HTML%20(the%20Hypertext%20Markup%20Language,for%20a%20variety%20of%20devices.">Click Here</a>. If you are not new, check out some free courses online to get a taste of different languages before commiting your time and energy into mastering one!</p>
-      </div>
-      <ul class="list-unstyled">
-        <h5>Websites Offering Free Coding Courses</h5>
-        <li><a href="https://www.codecademy.com/">Codecademy</a></li>
-        <li><a href="https://www.freecodecamp.org/news/free-online-programming-cs-courses/">freeCodeCamp</a></li>
-        <li><a href="https://skillcrush.com/blog/64-online-resources-to-learn-to-code-for-free/">SKILLCRUSH</a></li>
-      </ul>
-      <div class="card" style="width: 18rem;">
-        <img src="https://img.favpng.com/0/10/13/cascading-style-sheets-javascript-html-css3-jquery-png-favpng-EGGfknrdZiCNYjAFKp62Dnpy7.jpg" alt="HTML, CSS and JS Logo" class="card-img-top">
-        <h5 class="card-title" id="h-hidden">For Some Fun Facts About HTML and CSS <br><span class="h-click">Click Here!</span></h5>
-        <p class="card-text" id="h-showing"> Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Styles Sheets (CSS) and scripting languages such as JavaScript. CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. Both HTML and CSS are <strong>front-end languages</strong>.<br><span class="h-click">Click Here To Hide The Information</span></p>
-      </div>
-      <button type="button" class="btn btn-outline-light"><a href="results.html">Click here to see all results</a></button>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
