@@ -3,75 +3,65 @@ $(document).ready(function () {
     event.preventDefault();
 
     const name = $("input#name").val();
-    const development = $("input:radio[name=development]:checked").val();
-    const color = $("input:radio[name=color]:checked").val();
-    const build = $("input:radio[name=build]:checked").val();
-    const work = $("input:radio[name=work]:checked").val();
-    const helloworld = $("input:radio[name=helloworld]:checked").val();
-
-    if (
-      development === "backend" &&
-      color === "red" &&
-      build === "web" &&
-      work === "github" &&
-      helloworld === "rubee"
-    ) {
-      $("#csharp, #javascript, #python, #newbie").hide();
-      $(".name").text(name);
-      $("#ruby").show();
-      $(".clickable").click(function () {
-        $("#showing").toggle();
-        $("#hidden").toggle();
-      });
-    } else if (
-      development === "backend" &&
-      color === "purple" &&
-      build === "games" &&
-      work === "microsoft" &&
-      helloworld === "seesharp"
-    ) {
+    const development = parseInt(
+      $("input:radio[name=development]:checked").val()
+    );
+    const color = parseInt($("input:radio[name=color]:checked").val());
+    const build = parseInt($("input:radio[name=build]:checked").val());
+    const work = parseInt($("input:radio[name=work]:checked").val());
+    const music = parseInt($("input:radio[name=music]:checked").val());
+    const food = parseInt($("input:radio[name=food]:checked").val());
+    const film = parseInt($("input:radio[name=film]:checked").val());
+    const activity = parseInt($("input:radio[name=activity]:checked").val());
+    const location = parseInt($("input:radio[name=location]:checked").val());
+    const why = parseInt($("input:radio[name=why]:checked").val());
+    const result =
+      name +
+      development +
+      color +
+      build +
+      work +
+      music +
+      food +
+      film +
+      activity +
+      location +
+      why;
+    console.log(result);
+    if (result >= 20) {
+      $("#csharp").show();
       $("#ruby, #javascript, #python, #newbie").hide();
       $(".name").text(name);
-      $("#csharp").show();
       $(".c-click").click(function () {
-        $("#c-showing").toggle();
-        $("#c-hidden").toggle();
+        $("#c-showing").slideToggle();
       });
-    } else if (
-      development === "frontend" &&
-      color === "yellow" &&
-      build === "fun" &&
-      work === "netflix" &&
-      helloworld === "jscript"
-    ) {
-      $("#ruby, #csharp, #python, #newbie").hide();
+    } else if (result >= 100) {
+      $("#ruby").show();
+      $("#csharp, #javascript, #python, #newbie").hide();
       $(".name").text(name);
-      $("#javascript").show();
-      $(".j-click").click(function () {
-        $("#j-showing").toggle();
-        $("#j-hidden").toggle();
+      $(".clickable").click(function () {
+        $("#showing").slideToggle();
       });
-    } else if (
-      development === "backend" &&
-      color === "yellowblue" &&
-      build === "web" &&
-      work === "google" &&
-      helloworld === "snake"
-    ) {
+    } else if (result >= 200) {
+      $("#python").show();
       $("#ruby, #csharp, #javascript, #newbie").hide();
       $(".name").text(name);
-      $("#python").show();
       $(".p-click").click(function () {
-        $("#p-showing").toggle();
-        $("#p-hidden").toggle();
+        $("#p-showing").slideToggle();
+      });
+    } else if (result >= 400) {
+      $("#javascript").show();
+      $("#ruby, #csharp, #python, #newbie").hide();
+      $(".name").text(name);
+      $(".j-click").click(function () {
+        $("#j-showing").slideToggle();
       });
     } else {
+      $("#newbie").show();
       $("#ruby, #csharp, #javascript, #python").hide();
       $(".name").text(name);
-      $("#newbie").show();
       $(".h-click").click(function () {
-        $("#h-showing").toggle();
-        $("#h-hidden").toggle();
+        $("#h-showing").slideToggle();
       });
     }
   });
