@@ -15,41 +15,32 @@ $(document).ready(function () {
     const activity = parseInt($("input:radio[name=activity]:checked").val());
     const location = parseInt($("input:radio[name=location]:checked").val());
     const why = parseInt($("input:radio[name=why]:checked").val());
-    const result =
-      name +
-      development +
-      color +
-      build +
-      work +
-      music +
-      food +
-      film +
-      activity +
-      location +
-      why;
+    const result =  development + color + build + work + music + food + film + activity + location + why;
+      console.log(why);
     console.log(result);
-    if (result >= 20) {
+
+    if (result >= 300) {
       $("#csharp").show();
       $("#ruby, #javascript, #python, #newbie").hide();
       $(".name").text(name);
       $(".c-click").click(function () {
         $("#c-showing").slideToggle();
       });
-    } else if (result >= 100) {
+    } else if (result >= 200) {
       $("#ruby").show();
       $("#csharp, #javascript, #python, #newbie").hide();
       $(".name").text(name);
       $(".clickable").click(function () {
         $("#showing").slideToggle();
       });
-    } else if (result >= 200) {
+    } else if (result >= 100) {
       $("#python").show();
       $("#ruby, #csharp, #javascript, #newbie").hide();
       $(".name").text(name);
       $(".p-click").click(function () {
         $("#p-showing").slideToggle();
       });
-    } else if (result >= 400) {
+    } else if (result >= 35) {
       $("#javascript").show();
       $("#ruby, #csharp, #python, #newbie").hide();
       $(".name").text(name);
