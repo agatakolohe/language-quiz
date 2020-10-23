@@ -52,4 +52,23 @@ $(document).ready(function () {
       });
     }
   });
+  //Functions for results.html 
+  $(".c-click").click(function () {
+    $("#c-showing").fadeToggle();
+  });
+  $(".clickable").click(function () {
+    $("#showing").fadeToggle();
+  });
+  $(".p-click").click(function () {
+    $("#p-showing").fadeToggle();
+  });
+  $(".j-click").click(function () {
+    $("#j-showing").fadeToggle();
+  });
+  $(".html-click").click(function () {
+    $("#html-showing").fadeToggle();
+  });
+  $(".css-click").click(function () {
+    $("#css-showing").fadeToggle();
+  });
 });
