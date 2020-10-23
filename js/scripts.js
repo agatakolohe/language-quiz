@@ -3,9 +3,7 @@ $(document).ready(function () {
     event.preventDefault();
 
     const name = $("input#name").val();
-    const development = parseInt(
-      $("input:radio[name=development]:checked").val()
-    );
+    const development = parseInt($("input:radio[name=development]:checked").val());
     const color = parseInt($("input:radio[name=color]:checked").val());
     const build = parseInt($("input:radio[name=build]:checked").val());
     const work = parseInt($("input:radio[name=work]:checked").val());
@@ -16,8 +14,6 @@ $(document).ready(function () {
     const location = parseInt($("input:radio[name=location]:checked").val());
     const why = parseInt($("input:radio[name=why]:checked").val());
     const result =  development + color + build + work + music + food + film + activity + location + why;
-      console.log(why);
-    console.log(result);
 
     if (result >= 300) {
       $("#csharp").show();

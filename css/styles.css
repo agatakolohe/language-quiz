@@ -13,6 +13,15 @@
 a {
   color: #00bebe;
 }
+.btn {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.lang-quiz h5 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-shadow: 5px 5px #007272;
+}
 #ruby,
 #csharp,
 #javascript,
@@ -28,6 +37,8 @@ a {
 #p-showing,
 #h-showing {
   display: none;
+  padding: 20px;
+  text-align: left;
 }
 .clickable,
 .c-click,
@@ -36,6 +47,14 @@ a {
 .h-click {
   color: darkturquoise;
   cursor: pointer;
+}
+.clickable:hover,
+.c-click:hover,
+.j-click:hover,
+.p-click:hover,
+.h-click:hover {
+  color: white;
+  background-color: darkturquoise;
 }
 .card {
   margin-left: auto;
@@ -65,7 +84,19 @@ body {
 }
 .form-group {
   font-size: 20px;
-  text-shadow: 3px 3px black;
+  text-shadow: 5px 5px #007272;
+}
+.form-control {
+  border: solid #00bebe;
+  border-width: 5px;
+  font-size: 20px;
+}
+.form-control:hover {
+  color: white;
+  background-color: #00bebe;
+}
+label[for="name"] {
+  margin-top: 15px;
 }
 label[for="red"] {
   color: red;

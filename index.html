@@ -21,12 +21,13 @@
           learn!
         </h4>
       </div>
+      <div class="lang-quiz">
       <form id="quiz">
         <div class="form-group">
           <input id="name" class="form-control" type="text" />
-          <label for="name"><strong>What's your name?</strong></label>
+          <label for="name"><strong>Enter your name</strong></label>
         </div>
-        <p>1. Are you interested in Front-End or Back-End Development?</p>
+        <h5>1. Are you interested in Front-End or Back-End Development?</h5>
         <div class="radio">
           <label>
             <input type="radio" name="development" value="1" />
@@ -45,7 +46,7 @@
             c. Not Sure
           </label>
         </div>
-        <p>2. Which color(s) do you like the most?</p>
+        <h5>2. Which color(s) do you like the most?</h5>
         <div class="radio">
           <label for="red">
             <input type="radio" name="color" value="200" />
@@ -70,7 +71,7 @@
             d. Blue
           </label>
         </div>
-        <p>3. What would you like to build?</p>
+        <h5>3. What would you like to build?</h5>
         <div class="radio">
           <label>
             <input type="radio" name="build" value="1" />
@@ -95,7 +96,7 @@
             d. Not sure or I want to learn the fundamentals
           </label>
         </div>
-        <p>4. Who would you like to work for?</p>
+        <h5>4. Who would you like to work for?</h5>
         <div class="radio">
           <label>
             <input type="radio" name="work" value="1" />
@@ -120,7 +121,7 @@
             d. Google
           </label>
         </div>
-        <p>5. What genre of music do you like?</p>
+        <h5>5. What genre of music do you like?</h5>
         <div class="radio">
           <label>
             <input type="radio" name="music" value="0" />
@@ -145,7 +146,7 @@
             d. EDM
           </label>
         </div>
-        <p>6. Which cuisine do you like the most?</p>
+        <h5>6. Which cuisine do you like the most?</h5>
         <div class="radio">
           <label>
             <input type="radio" name="food" value="4" />
@@ -170,7 +171,7 @@
             d. Mexican
           </label>
         </div>
-        <p>7. What film genre do you enjoy watching?</p>
+        <h5>7. What film genre do you enjoy watching?</h5>
         <div class="radio">
           <label>
             <input type="radio" name="film" value="1" />
@@ -195,32 +196,32 @@
             d. Romance
           </label>
         </div>
-        <p>8. Which activity would you like to do right now?</p>
+        <h5>8. Which activity do you enjoy doing?</h5>
         <div class="radio">
           <label>
             <input type="radio" name="activity" value="0" />
-            a. Sleep
+            a. Sleeping
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="activity" value="2" />
-            b. Read
+            b. Reading
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="activity" value="3" />
-            c. Hike
+            c. Hiking
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="activity" value="4" />
-            d. Play Video Games
+            d. Playing video games
           </label>
         </div>
-        <p>9. Where would you like to live?</p>
+        <h5>9. Where would you like to live?</h5>
         <div class="radio">
           <label>
             <input type="radio" name="location" value="1" />
@@ -245,10 +246,10 @@
             d. Countryside
           </label>
         </div>
-        <p>10. Why do you want to learn a programming language?</p>
+        <h5>10. Why do you want to learn a programming language?</h5>
         <div class="radio">
           <label>
-            <input type="radio" name="why" value="1" />
+            <input type="radio" name="why" value="3" />
             a. Career Change
           </label>
         </div>
@@ -260,8 +261,8 @@
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="why" value="3" />
-            c. For Fun
+            <input type="radio" name="why" value="2" />
+            c. For fun
           </label>
         </div>
         <div class="radio">
@@ -270,9 +271,9 @@
             d. Job Requirement
           </label>
         </div>
-        <button type="submit" class="btn btn-outline-light">Submit!</button
-        ><br />
+        <button type="submit" class="btn btn-outline-light">Submit!</button>
       </form>
+      </div>
       <div id="ruby">
         <div class="jumbotron">
           <h4><span class="name"></span>, you got Ruby!</h4>
@@ -287,14 +288,14 @@
             <a href="https://www.ruby-lang.org/en/">Click Here</a>
           </p>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 35rem">
           <img
             src="https://banner2.cleanpng.com/20180428/dsq/kisspng-ruby-on-rails-programming-language-computer-progra-5ae4ad08b27f03.5253789115249359447311.jpg"
             alt="Ruby Logo"
             class="card-img-top"
           />
           <h5 class="card-title clickable">
-            Click here for Some Fun Facts About Ruby
+            Click Here for Some Fun Facts About Ruby
           </h5>
           <p class="card-text" id="showing">
             It was designed and developed in the mid-1990s by Yukihiro Mastumoto
@@ -323,14 +324,14 @@
             >
           </p>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 35rem">
           <img
             src="https://www.alltechflix.com/wp-content/uploads/2019/01/c-sharp-language.jpg"
             alt="C# Logo"
             class="card-img-top"
           />
           <h5 class="card-title c-click">
-            Click here for Some Fun Facts About C#
+            Click here <br> for some fun facts about C#
           </h5>
           <p class="card-text" id="c-showing">
             C#, pronounced as "C sharp", was developed by Microsoft led by
@@ -365,7 +366,7 @@
             >
           </p>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 35rem">
           <img
             src="https://ih1.redbubble.net/image.243371836.4766/st,small,507x507-pad,600x600,f8f8f8.u3.jpg"
             alt="Java Script Logo"
@@ -398,7 +399,7 @@
             <a href="https://www.python.org/">Click Here</a>
           </p>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 35rem">
           <img
             src="https://juniortech.org/wp-content/uploads/2017/04/python-software-logo-300x158.jpg"
             alt="Python Logo"
@@ -456,7 +457,7 @@
             >
           </li>
         </ul>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 35rem">
           <img
             src="https://img.favpng.com/0/10/13/cascading-style-sheets-javascript-html-css3-jquery-png-favpng-EGGfknrdZiCNYjAFKp62Dnpy7.jpg"
             alt="HTML, CSS and JS Logo"
