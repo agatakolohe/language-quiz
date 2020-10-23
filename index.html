@@ -47,106 +47,229 @@
         </div>
         <p>2. Which color(s) do you like the most?</p>
         <div class="radio">
-          <label>
-            <input type="radio" name="color" value="1" />
+          <label for="red">
+            <input type="radio" name="color" value="30" />
             a. Red
           </label>
         </div>
         <div class="radio">
-          <label>
-            <input type="radio" name="color" value="2" />
+          <label for="purple">
+            <input type="radio" name="color" value="50" />
             b. Purple
           </label>
         </div>
         <div class="radio">
-          <label>
-            <input type="radio" name="color" value="3" />
+          <label for="yellow">
+            <input type="radio" name="color" value="10" />
             c. Yellow
           </label>
         </div>
         <div class="radio">
-          <label>
-            <input type="radio" name="color" value="4" />
-            c. Blue and Yellow
+          <label for="blue">
+            <input type="radio" name="color" value="40" />
+            d. Blue
           </label>
         </div>
         <p>3. What would you like to build?</p>
         <div class="radio">
           <label>
-            <input type="radio" name="color" value="1" />
-            a. Red
+            <input type="radio" name="build" value="40" />
+            a. Web Applications
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="color" value="2" />
-            b. Purple
+            <input type="radio" name="build" value="50" />
+            b. Games
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="color" value="3" />
-            c. Yellow
+            <input type="radio" name="build" value="30" />
+            c. Phone Apps
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="color" value="4" />
-            c. Blue and Yellow
+            <input type="radio" name="build" value="0" />
+            d. Not sure or I want to learn the fundamentals
           </label>
         </div>
-
-        <h5>1. Are you interested in Front-End or Back-End Development?</h5>
-        <input type="radio" id="frontend" name="development" value="10" />
-        <label for="frontend">Front End</label><br />
-        <input type="radio" id="backend" name="development" value="20" />
-        <label for="backend">Back End</label><br />
-        <input type="radio" id="notsure" name="development" value="0" />
-        <label for="notsure">Not Sure</label><br />
-        <br />
-        <h5>2. Which color(s) do you like the most?</h5>
-        <input type="radio" id="red" name="color" value="1" />
-        <label for="red">Red</label><br />
-        <input type="radio" id="purple" name="color" value="2" />
-        <label for="purple">Purple</label><br />
-        <input type="radio" id="yellow" name="color" value="3" />
-        <label for="yellow">Yellow</label><br />
-        <input type="radio" id="yellowblue" name="color" value="4" />
-        <label for="yellowblue"
-          ><span class="blue">Blue</span> and
-          <span class="mellow">Yellow</span></label
-        ><br />
-        <br />
-        <h5>3. What would you like to build?</h5>
-        <input type="radio" id="web" name="build" value="10" />
-        <label for="web">Web Applications</label><br />
-        <input type="radio" id="games" name="build" value="30" />
-        <label for="games">Games</label><br />
-        <input type="radio" id="fun" name="build" value="2" />
-        <label for="fun">I want to learn the fundamentals</label><br />
-        <input type="radio" id="notsure" name="build" value="notsure" />
-        <label for="0">Not Sure</label><br />
-        <br />
-        <h5>4. Who would you like to work for?</h5>
-        <input type="radio" id="github" name="work" value="6" />
-        <label for="github">GitHub</label><br />
-        <input type="radio" id="microsoft" name="work" value="30" />
-        <label for="microsoft">Microsoft</label><br />
-        <input type="radio" id="netflix" name="work" value="20" />
-        <label for="netflix">Netflix</label><br />
-        <input type="radio" id="google" name="work" value="10" />
-        <label for="google">Google</label><br />
-        <br />
-        <h5>5. What type of music do you like?</h5>
-        <input type="radio" id="country" name="music" value="7" />
-        <label for="rubee">Country</label><br />
-        <input type="radio" id="rock" name="music" value="20" />
-        <label for="seesharp">Rock</label><br />
-        <input type="radio" id="jazz" name="music" value="2" />
-        <label for="jscript">Jazz</label><br />
-        <input type="radio" id="edm" name="music" value="10" />
-        <label for="snake">EDM</label><br />
-        <br />
+        <p>4. Who would you like to work for?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="work" value="10" />
+            a. Git Hub
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="work" value="30" />
+            b. Microsoft
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="work" value="20" />
+            c. Netflix
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="work" value="6" />
+            d. Google
+          </label>
+        </div>
+        <p>5. What genre of music do you like?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="7" />
+            a. Country
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="20" />
+            b. Rock
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="2" />
+            c. Jazz
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="10" />
+            d. EDM
+          </label>
+        </div>
+        <p>6. Which cuisine do you like the most?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="30" />
+            a. Thai
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="10" />
+            b. Indian
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="20" />
+            c. Italian
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="food" value="5" />
+            d. Mexican
+          </label>
+        </div>
+        <p>7. What film genre do you enjoy watching?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="film" value="1" />
+            a. Horror
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="film" value="2" />
+            b. Science Fiction
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="film" value="3" />
+            c. Comedy
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="4" />
+            d. Romance
+          </label>
+        </div>
+        <p>8. Which activity would you like to do right now?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="activity" value="1" />
+            a. Sleep
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="activity" value="2" />
+            b. Read
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="3" />
+            c. Hike
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="music" value="4" />
+            d. Play Video Games
+          </label>
+        </div>
+        <p>9. Where would you like to live?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="location" value="1" />
+            a. Tropical Island
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="location" value="2" />
+            b. Mountains
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="location" value="3" />
+            c. City
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="location" value="10" />
+            d. Countryside
+          </label>
+        </div>
+        <p>10. Why do you want to learn a programming language?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="why" value="1" />
+            a. Career Change
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="why" value="2" />
+            b. Curiosity
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="why" value="3" />
+            c. For Fun
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="why" value="4" />
+            d. Job Requirement
+          </label>
+        </div>
         <button type="submit" class="btn btn-outline-light">Submit!</button
         ><br />
       </form>

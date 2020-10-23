@@ -13,15 +13,27 @@
 a {
   color: #00bebe;
 }
-#ruby, #csharp, #javascript, #python, #newbie {
+#ruby,
+#csharp,
+#javascript,
+#python,
+#newbie {
   display: none;
   margin-top: 30px;
   text-align: center;
 }
-#showing, #c-showing, #j-showing, #p-showing, #h-showing {
+#showing,
+#c-showing,
+#j-showing,
+#p-showing,
+#h-showing {
   display: none;
 }
-.clickable, .c-click, .j-click, .p-click, .h-click {
+.clickable,
+.c-click,
+.j-click,
+.p-click,
+.h-click {
   color: darkturquoise;
   cursor: pointer;
 }
@@ -64,9 +76,6 @@ label[for="purple"] {
 label[for="yellow"] {
   color: yellow;
 }
-label[for="yellowblue"] .blue {
+label[for="blue"] {
   color: blue;
-}
-label[for="yellowblue"] .mellow {
-  color: yellow;
 }
