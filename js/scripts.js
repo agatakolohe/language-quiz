@@ -67,10 +67,10 @@ $(document).ready(function () {
   $(".r-c-click").click(function () {
     $("#c-showing").fadeToggle();
   });
-  $(".r-clickable").click(function () {
+  $(".ruby-click").click(function () {
     $("#showing").fadeToggle();
   });
-  $(".r-p-click").click(function () {
+  $(".python-click").click(function () {
     $("#p-showing").fadeToggle();
   });
   $(".r-j-click").click(function () {
